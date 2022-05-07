@@ -1,13 +1,15 @@
-package com.flowerscorner;
+package com.jjour;
 
+import com.jjour.model.ArticleModel;
+import com.jjour.model.CategoryModel;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FlowerscornerApplication {
+public class JjourApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FlowerscornerApplication.class, args);
+        SpringApplication.run(JjourApplication.class, args);
     }
 
 }
