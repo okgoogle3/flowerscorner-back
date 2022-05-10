@@ -1,4 +1,4 @@
-version: "1"
+version: "3.3"
 services:
   server:
     restart: unless-stopped
@@ -7,10 +7,17 @@ services:
       - db
     ports:
       - "8080:8080"
+    environment:
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_NAME: jjour
+      DB_PASSWORD: 135246
   db:
     image: "mysql:8.0-debian"
     ports:
       - "3306:3306"
+    expose:
+      - '3306'
     environment:
       MYSQL_ROOT_PASSWORD: 135246
       MYSQL_DATABASE: jjour

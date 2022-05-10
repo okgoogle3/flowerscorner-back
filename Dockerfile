@@ -5,4 +5,5 @@ EXPOSE 8080
 
 ENV DB_USERNAME root
 
+
 ENTRYPOINT ["java", "-jar", "server.jar"]
