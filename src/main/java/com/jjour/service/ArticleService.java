@@ -11,7 +11,6 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class ArticleService {
-    @Autowired
     public final ArticleRepo articleRepo;
 
     public List<ArticleModel> getAllArticles(){

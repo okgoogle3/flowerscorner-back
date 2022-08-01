@@ -17,7 +17,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/articles")
 public class ArticleController {
-    @Autowired
     private final ArticleService articleService;
 
     @GetMapping

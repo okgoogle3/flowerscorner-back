@@ -11,7 +11,6 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class CategoryService {
-    @Autowired
     public final CategoryRepo categoryRepo;
 
     public List<CategoryModel> getAllCategories(){
