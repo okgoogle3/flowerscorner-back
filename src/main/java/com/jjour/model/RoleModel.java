@@ -16,9 +16,9 @@ public class RoleModel {
     private Integer id;
     @Enumerated(EnumType.STRING)
     @Column(length = 20)
-    private ERole name;
+    private ERole role;
 
-    public RoleModel(ERole name) {
-        this.name = name;
+    public RoleModel(ERole role) {
+        this.role = role;
     }
 }

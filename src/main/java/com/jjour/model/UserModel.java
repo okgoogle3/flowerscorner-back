@@ -22,10 +22,6 @@ public class UserModel extends BaseModel {
     @Column(nullable = false)
     private String email;
 
-    private String phoneNumber;
-
-    private String photoLink;
-
     @Column(nullable = false)
     private String password;
 
